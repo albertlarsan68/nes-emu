@@ -1,0 +1,19 @@
+[package]
+name = "nes-emu"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bitflags = { version = "2.4.2", features = ["std"] }
+
+[lints.rust]
+unsafe_op_in_unsafe_fn = "forbid"
+unsafe_code = "forbid"
+
+[lints.clippy]
+enum_glob_use = "deny"
+pedantic = "warn"
+nursery = "warn"
+unwrap_used = "deny"
